@@ -1,0 +1,26 @@
+{
+  "name": "@poc/vuejs-micro",
+  "version": "1.0.0",
+  "private": false,
+  "main": "dist/vue-micro.js",
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build --target wc --name vue-micro ./src/components/VueWebComponent.vue",
+    "watch": "vue-cli-service build --watch  --target wc  --name vue-micro ./src/components/VueWebComponent.vue"
+  },
+  "dependencies": {
+    "@vue/web-component-wrapper": "^1.2.0",
+    "core-js": "^3.4.4",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-property-decorator": "^8.3.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-typescript": "^4.1.0",
+    "@vue/cli-service": "^4.1.0",
+    "@vue/web-component-wrapper": "^1.2.0",
+    "typescript": "~3.5.3",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

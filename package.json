@@ -9,7 +9,9 @@
     "modules/*"
   ],
   "scripts": {
+    "prestart": "lerna run build --stream",
     "start": "lerna run start --stream",
+    "watch": "lerna run watch --stream",
     "clean": "lerna clean --yes && rm -rf node_modules"
   },
   "devDependencies": {
