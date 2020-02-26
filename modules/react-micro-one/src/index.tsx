@@ -13,4 +13,4 @@ class HelloReactWC extends HTMLElement {
     this.render();
   }
 }
-customElements.define("react-micro-two", HelloReactWC);
+customElements.define("react-micro-one", HelloReactWC);
