@@ -1,0 +1,6 @@
+*.log
+modules/**/dist/*
+modules/**/build/*
+node_modules
+.cache
+.idea/

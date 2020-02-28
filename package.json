@@ -1,0 +1,29 @@
+{
+  "name": "poc-portal",
+  "description": "A proof of concept for the Web Portal that encapsulates web-components and micro frontend",
+  "author": "Vivy GmbH",
+  "private": true,
+  "version": "0.0.0",
+  "main": "index.js",
+  "workspaces": [
+    "modules/*"
+  ],
+  "scripts": {
+    "prestart": "lerna run build --stream",
+    "start": "lerna run start --stream",
+    "watch": "lerna run watch --stream",
+    "clean": "lerna clean --yes && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VivyTeam/web-components-microfrontends-poc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VivyTeam/web-components-microfrontends-poc/issues"
+  },
+  "homepage": "https://github.com/VivyTeam/web-components-microfrontends-poc#readme"
+}
