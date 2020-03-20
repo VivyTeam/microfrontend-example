@@ -1,7 +1,6 @@
 import React from "react";
 import "@poc/react-micro-one";
 import "@poc/react-micro-old";
-import "@poc/vuejs-micro";
 
 interface AppState {
   counter: number;
@@ -45,8 +44,6 @@ export default class App extends React.Component<{}, AppState> {
           title="Welcome to react-micro-one. Written with TypeScript"
           value={counter}
         />
-
-        <vue-micro title="Welcome to vue-micro. Written with TypeScript" />
       </div>
     );
   }
