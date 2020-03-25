@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "private": false,
   "dependencies": {
-    "@poc/vuejs-micro": "1.0.0",
     "@poc/react-micro-one": "1.0.0",
     "@poc/react-micro-old": "1.0.0",
     "@types/jest": "24.0.18",
