@@ -14,7 +14,7 @@ export const App: FunctionComponent<{}> = () => {
 
   return (
     <>
-      <react-micro-one title="Micro Frontend 1" counter={counter} />
+      <react-micro-one title="Micro Frontend 1" />
       <react-micro-two title="Micro Frontend 2" counter={counter} />
     </>
   );

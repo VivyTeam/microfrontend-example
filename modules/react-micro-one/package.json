@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": false,
   "main": "dist/bundle.js",
+  "types": "dist/bundle.d.ts",
   "scripts": {
     "dev": "webpack-dev-server --open",
     "build": "webpack",
@@ -14,6 +15,7 @@
     "@types/styled-components": "^4.4.2",
     "ts-loader": "^6.0.4",
     "typescript": "^3.5.3",
+    "typescript-declaration-webpack-plugin": "^0.1.1",
     "webpack": "^4.41.5",
     "webpack-dev-server": "^3.10.1"
   },
