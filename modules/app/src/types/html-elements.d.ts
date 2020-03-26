@@ -1,5 +1,5 @@
 declare namespace JSX {
-  interface HelloReactAttributes
+  interface MicroOneAttirbutes
     extends React.DetailedHTMLProps<
       React.HTMLAttributes<HTMLElement>,
       HTMLElement
@@ -9,10 +9,10 @@ declare namespace JSX {
   }
 
   interface IntrinsicElements {
-    "react-micro-one": HelloReactAttributes;
+    "react-micro-one": MicroOneAttirbutes;
   }
 
-  interface HelloReactTwoAttributes
+  interface MicroTwoAttributes
     extends React.DetailedHTMLProps<
       React.HTMLAttributes<HTMLElement>,
       HTMLElement
@@ -22,6 +22,6 @@ declare namespace JSX {
   }
 
   interface IntrinsicElements {
-    "react-micro-two": HelloReactTwoAttributes;
+    "react-micro-two": MicroTwoAttributes;
   }
 }

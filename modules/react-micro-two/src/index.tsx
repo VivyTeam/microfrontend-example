@@ -17,26 +17,14 @@ class WebComponent extends HTMLElement {
     this.render();
   }
 
-  // attributeChang;
-  // attributeChangedCallback(attributeChangedCallback)
-
   attributeChangedCallback(
     attrName: string,
     oldVal: string,
     newVal: string
   ): void {
-    switch (attrName) {
-      case "counter": {
-        const newValueInt = parseInt(newVal, 10);
-        if (Number.isNaN(newValueInt)) {
-          break;
-        }
-        this.counter = newValueInt;
-        this.render();
-        break;
-      }
-      default:
-        break;
+    if (attrName === "counter") {
+      this.counter = parseInt(newVal, 10);
+      this.render();
     }
   }
 }

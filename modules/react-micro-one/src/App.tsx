@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   text-align: center;
   padding: 24px;
-  background-color: #c1cd97;
+  background-color: #f5cab3;
 `;
 
 type AppProps = {
@@ -18,20 +18,10 @@ const dispatchIncrementEvent = (e: MouseEvent<HTMLButtonElement>): void => {
 };
 
 const App: FunctionComponent<AppProps> = ({ title }) => {
-  const [count, setCount] = useState(0);
-
   return (
     <Wrapper>
       <h3>{title}</h3>
-      <h4>version: React 16.12.0</h4>
-      <p>Counter: {count}</p>
-      <button onClick={dispatchIncrementEvent}>
-        Increment the number on <b>micro old</b>
-      </button>
-
-      <button onClick={() => setCount(count + 1)}>
-        Increment local number
-      </button>
+      <button onClick={dispatchIncrementEvent}>Send INCREMENT event</button>
     </Wrapper>
   );
 };
