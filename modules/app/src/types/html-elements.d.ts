@@ -5,7 +5,7 @@ declare namespace JSX {
       HTMLElement
     > {
     title: string;
-    value: number;
+    counter: number;
   }
 
   interface IntrinsicElements {
@@ -18,20 +18,10 @@ declare namespace JSX {
       HTMLElement
     > {
     title: string;
+    counter: number;
   }
 
   interface IntrinsicElements {
     "react-micro-two": HelloReactTwoAttributes;
-  }
-  interface HelloVueAttributes {
-    title: string;
-  }
-
-  interface IntrinsicElements {
-    "vue-micro": HelloVueAttributes;
-  }
-
-  interface IntrinsicElements {
-    "react-app-old";
   }
 }

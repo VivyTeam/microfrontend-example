@@ -1,6 +1,6 @@
 import React from "react";
 import "@poc/react-micro-one";
-import "@poc/react-micro-old";
+import "@poc/react-micro-two";
 
 interface AppState {
   counter: number;
@@ -35,14 +35,14 @@ export default class App extends React.Component<{}, AppState> {
     const { counter } = this.state;
     return (
       <div ref={this.componentRef}>
-        <react-app-old
-          title="Welcome to react-micro-old. Written with Javascript"
-          value={counter}
-        />
-
         <react-micro-one
           title="Welcome to react-micro-one. Written with TypeScript"
-          value={counter}
+          counter={counter}
+        />
+
+        <react-micro-two
+          title="Welcome to react-micro-two. Written with TypeScript"
+          counter={counter}
         />
       </div>
     );
