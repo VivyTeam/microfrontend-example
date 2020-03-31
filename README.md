@@ -4,8 +4,18 @@ A proof of concept for the Web Portal. Web applications are being wrapped in cus
 
 ## To run a micro frontend app individually
 
-1. To install  the directory which is at the same level as `lerna.json` run `yarn`
+1. To install the directory which is at the same level as `lerna.json` run `yarn`
 
-2. Navigate to the modules `cd modules` and from there to the app you would like to start. While you are at the same level as `packahe.json` run `yarn dev`   
+2. Navigate to the modules `cd modules` and from there to the app you would like to start. While you are at the same level as `packahe.json` run `yarn dev`
 
-3. The app runs on your browser at `http://localhost:8080/`     
+3. The app runs on your browser at `http://localhost:8080/`
+
+# Rules of the Micro Frontends
+
+- Each MFE exposes itself as a Web Component (Custom Element + Shadow DOM)
+- Communication happens with DOM events
+  - These events must have `compose` set to true, in order to continue through the Custom Element boundary and be handled by the top level application
+
+# Caveats
+
+- React has issues with handling DOM events unless the react component is rendered as the direct shadow root child: https://github.com/facebook/react/issues/15759 https://github.com/facebook/react/issues/9242 https://github.com/spring-media/react-shadow-dom-retarget-events#readme

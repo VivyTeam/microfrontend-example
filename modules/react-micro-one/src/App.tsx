@@ -1,4 +1,4 @@
-import React, { FunctionComponent, MouseEvent, useState } from "react";
+import React, { FunctionComponent, MouseEvent } from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -12,7 +12,7 @@ type AppProps = {
 };
 
 const dispatchIncrementEvent = (e: MouseEvent<HTMLButtonElement>): void => {
-  const event = new CustomEvent("INCREMENT", { bubbles: true });
+  const event = new CustomEvent("INCREMENT", { bubbles: true, composed: true });
   const elem = e.target;
   elem.dispatchEvent(event);
 };
