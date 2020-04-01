@@ -1,4 +1,4 @@
-import React, { FunctionComponent, MouseEvent } from "react";
+import React, { FunctionComponent } from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`

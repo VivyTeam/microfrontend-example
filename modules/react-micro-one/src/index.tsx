@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import retargetEvents from "react-shadow-dom-retarget-events";
-import { StyleSheetManager } from "styled-components";
+import root from "react-shadow";
 import App from "./App";
 
 class WebComponent extends HTMLElement {
@@ -12,30 +11,14 @@ class WebComponent extends HTMLElement {
     return ["title"];
   }
 
-  constructor() {
-    super();
-    const shadowRoot = this.attachShadow({ mode: "open" });
-
-    // We must dedicate a place to render the styled-components styles
-    this.styleContainer = document.createElement("div");
-    this.shadowRoot.appendChild(this.styleContainer);
-
-    // Attach our component using shadow DOM
-    this.mountPoint = document.createElement("span");
-    this.shadowRoot.appendChild(this.mountPoint);
-  }
-
-  render = (): void => {
+  render() {
     ReactDOM.render(
-      <StyleSheetManager target={this.styleContainer}>
+      <root.div>
         <App title={this.title} />
-      </StyleSheetManager>,
-      this.mountPoint
+      </root.div>,
+      this
     );
-
-    // We need to retarget any events when using shadow dom. See README.md
-    retargetEvents(this.shadowRoot);
-  };
+  }
 
   connectedCallback(): void {
     this.render();

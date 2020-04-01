@@ -13,7 +13,6 @@
     "@types/react": "^16.9.19",
     "@types/react-dom": "^16.9.5",
     "@types/styled-components": "^4.4.2",
-    "react-shadow-dom-retarget-events": "^1.0.11",
     "ts-loader": "^6.0.4",
     "typescript": "^3.5.3",
     "typescript-declaration-webpack-plugin": "^0.1.1",
@@ -23,6 +22,7 @@
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-shadow": "^17.6.0",
     "styled-components": "^5.0.1"
   }
 }

@@ -18,5 +18,6 @@ A proof of concept for the Web Portal. Web applications are being wrapped in cus
 
 # Caveats
 
-- React has issues with handling DOM events unless the react component is rendered as the direct shadow root child: https://github.com/facebook/react/issues/15759 https://github.com/facebook/react/issues/9242 https://github.com/spring-media/react-shadow-dom-retarget-events#readme
-- Styled-components does not have great support for being used inside an iframe or a web component. We must use the style manager and target a top level div in the shadow dom. See https://github.com/styled-components/styled-components/issues/659#issuecomment-404759045
+- We use react-shadow to render the react components into the shadow dom because of these complications:
+  - React has issues with handling DOM events unless the react component is rendered as the direct shadow root child: https://github.com/facebook/react/issues/15759 https://github.com/facebook/react/issues/9242 https://github.com/spring-media/react-shadow-dom-retarget-events#readme
+  - Styled-components does not have great support for being used inside an iframe or a web component. We must use the style manager and target a top level div in the shadow dom. See https://github.com/styled-components/styled-components/issues/659#issuecomment-404759045

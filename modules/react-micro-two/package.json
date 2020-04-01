@@ -22,6 +22,7 @@
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-shadow": "^17.6.0",
     "styled-components": "^5.0.1"
   }
 }

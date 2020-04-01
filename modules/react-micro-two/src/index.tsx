@@ -1,17 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import root from "react-shadow";
 import App from "./App";
 
 export class WebComponent extends HTMLElement {
+  mountPoint: HTMLElement;
+  styleContainer: HTMLElement;
+  counter = 0;
+
   static get observedAttributes() {
     return ["title", "counter"];
   }
 
-  counter = 0;
-
-  render = (): void => {
-    ReactDOM.render(<App title={this.title} counter={this.counter} />, this);
-  };
+  render() {
+    ReactDOM.render(
+      <root.div>
+        <App title={this.title} counter={this.counter} />
+      </root.div>,
+      this
+    );
+  }
 
   connectedCallback(): void {
     this.render();
