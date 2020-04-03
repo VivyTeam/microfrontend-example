@@ -5,9 +5,10 @@
   "main": "dist/bundle.js",
   "types": "dist/bundle.d.ts",
   "scripts": {
-    "dev": "webpack-dev-server --open",
+    "start": "yarn build:watch",
+    "serve": "webpack-dev-server --open",
     "build": "webpack",
-    "watch": "webpack --watch"
+    "build:watch": "webpack --watch"
   },
   "devDependencies": {
     "@types/react": "^16.9.19",

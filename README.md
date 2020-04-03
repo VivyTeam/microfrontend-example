@@ -1,14 +1,23 @@
-# poc-portal
+# microfrontend-example
 
-A proof of concept for the Web Portal. Web applications are being wrapped in custom elements and served from a thin integration layer.
+A proof of concept and template for a micro frontend setup with Typescript, React and Web Components.
 
-## To run a micro frontend app individually
+## How to run
 
-1. To install the directory which is at the same level as `lerna.json` run `yarn`
+### Watch and serve entire application
 
-2. Navigate to the modules `cd modules` and from there to the app you would like to start. While you are at the same level as `packahe.json` run `yarn dev`
+From the top level directory:
 
-3. The app runs on your browser at `http://localhost:8080/`
+- Run `yarn`
+- Run `lerna boostrap`
+- Run `yarn serve`
+
+### Watch and serve individual application
+
+- Navigate to a application folder (ie. `/modules/*`)
+- Run `yarn serve`
+
+This will run and serve only the chosen application
 
 # Rules of the Micro Frontends
 
