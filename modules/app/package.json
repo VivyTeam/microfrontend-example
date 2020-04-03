@@ -1,15 +1,14 @@
 {
-  "name": "@poc/wc-example-react",
+  "name": "@microfrontend-example/app",
   "version": "1.0.0",
   "private": false,
   "dependencies": {
-    "@poc/react-micro-one": "1.0.0",
-    "@poc/react-micro-two": "1.0.0",
+    "@microfrontend-example/react-micro-one": "1.0.0",
+    "@microfrontend-example/react-micro-two": "1.0.0",
     "@types/jest": "24.0.18",
     "@types/node": "12.7.3",
     "@types/react": "16.9.2",
     "@types/react-dom": "16.9.0",
-    "@webcomponents/webcomponentsjs": "^2.2.10",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.2",

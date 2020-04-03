@@ -1,6 +1,6 @@
 {
-  "name": "poc-portal",
-  "description": "A proof of concept for the Web Portal that encapsulates web-components and micro frontend",
+  "name": "microfrontend-example",
+  "description": "A proof of concept for micro frontends encapsulated with web components",
   "author": "Vivy GmbH",
   "private": true,
   "version": "0.0.0",

@@ -1,5 +1,5 @@
 {
-  "name": "@poc/react-micro-two",
+  "name": "@microfrontend-example/react-micro-two",
   "version": "1.0.0",
   "private": false,
   "main": "dist/bundle.js",

@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useState, useEffect } from "react";
-import "@poc/react-micro-one";
-import "@poc/react-micro-two";
+import "@microfrontend-example/react-micro-one";
+import "@microfrontend-example/react-micro-two";
 
 export const App: FunctionComponent<{}> = () => {
   const [counter, setCounter] = useState(0);
