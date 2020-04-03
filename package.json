@@ -15,13 +15,5 @@
   "devDependencies": {
     "lerna": "^3.20.2",
     "webpack-cli": "^3.3.10"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/VivyTeam/web-components-microfrontends-poc.git"
-  },
-  "bugs": {
-    "url": "https://github.com/VivyTeam/web-components-microfrontends-poc/issues"
-  },
-  "homepage": "https://github.com/VivyTeam/web-components-microfrontends-poc#readme"
+  }
 }

@@ -1,7 +1,7 @@
 {
   "name": "@microfrontend-example/app",
   "version": "1.0.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@microfrontend-example/react-micro-one": "1.0.0",
     "@microfrontend-example/react-micro-two": "1.0.0",

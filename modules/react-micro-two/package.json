@@ -1,14 +1,14 @@
 {
   "name": "@microfrontend-example/react-micro-two",
   "version": "1.0.0",
-  "private": false,
+  "private": true,
   "main": "dist/bundle.js",
   "types": "dist/bundle.d.ts",
   "scripts": {
     "start": "yarn build:watch",
     "serve": "webpack-dev-server --open",
-    "build": "webpack",
-    "build:watch": "webpack --watch"
+    "build": "webpack --mode=production",
+    "build:watch": "webpack --watch --mode=development"
   },
   "devDependencies": {
     "@types/react": "^16.9.19",
