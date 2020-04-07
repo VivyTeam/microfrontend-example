@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import root from "react-shadow";
+import root from "react-shadow/styled-components";
 import App from "./App";
 
 class WebComponent extends HTMLElement {
@@ -13,7 +13,7 @@ class WebComponent extends HTMLElement {
 
   render() {
     ReactDOM.render(
-      <root.div>
+      <root.div style={{ all: "initial" }}>
         <App title={this.title} />
       </root.div>,
       this
