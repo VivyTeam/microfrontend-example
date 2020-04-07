@@ -4,9 +4,6 @@ import root from "react-shadow/styled-components";
 import App from "./App";
 
 class WebComponent extends HTMLElement {
-  mountPoint: HTMLElement;
-  styleContainer: HTMLElement;
-
   static get observedAttributes(): string[] {
     return ["title"];
   }
